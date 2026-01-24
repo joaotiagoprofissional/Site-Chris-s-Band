@@ -1,0 +1,94 @@
+@import url(../css/variables.css);
+
+/*
+    color: var(--color--whiteColor);
+     @media (min-width: 768px){
+    ul{
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        position: absolute;
+        top: 80%;
+        left: 0;
+        padding: 1rem;
+        background-color: var(--color--blackColor);
+    }
+
+*/
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color--blackColor);
+}
+
+.logo-img{
+    width: 100px;
+    margin-left: 20px;
+}
+
+.btn{
+    display: none;
+}
+
+#menu-header{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.link-menu{
+    color: var(--color--whiteColor);
+    font-weight: 600;
+    position: relative;
+}
+
+.link-menu::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--color--whiteColor);
+    transition: width 0.3s ease;
+}
+
+.link-menu:hover::after {
+  width: 100%;
+}
+
+.contacts{
+    display: flex;
+    gap: 5px;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.bi{
+    padding: 5px 12px;
+    transition: 0.5s ease;
+    color: var(--color--whiteColor);
+}
+
+.bi:hover{
+    background-color: var(--color--whiteColor);
+    border-radius: 5px;
+    color: var(--color--blackColor);
+}
